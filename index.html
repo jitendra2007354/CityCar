@@ -37,6 +37,35 @@
       }
     </script>
     <style>
+  /* This prevents the horizontal scroll */
+  html, body { 
+    scroll-behavior: smooth;
+    background-color: #0B0F1A; 
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Fixes the right-side gap */
+    position: relative;
+  }
+
+  /* Ensures your React root doesn't expand past the screen */
+  #root {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Rest of your existing CSS... */
+  .text-shadow { text-shadow: 0 4px 20px rgba(247,201,72,0.4); }
+  /* ... etc ... */
+</style>
+    <style>
+      body {
+  background-color: #0B0F1A;
+  color: white;
+  overflow-x: hidden; /* This hides anything that pokes out the side */
+  width: 100%;
+}
       html { scroll-behavior: smooth; }
       .text-shadow { text-shadow: 0 4px 20px rgba(247,201,72,0.4); }
       body { background-color: #0B0F1A; color: white; }
