@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://></script>www.citycarajmer.in/sitemap.xml
-
+Sitemap: https://www.citycarajmer.in/sitemap.xml
