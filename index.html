@@ -23,108 +23,42 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TaxiService",
+  "@type": "Taxi Service",
   "name": "City Car Ajmer",
-  "url": "https://citycarajmer.in",
-  "logo": "https://citycarajmer.in/assets/logo.png",
-  "image": "https://citycarajmer.in/assets/logo.png",
+  "url": "https://www.citycarajmer.in",
+  "logo": "https://www.citycarajmer.in/assets/logo.png",
+  "image": "https://www.citycarajmer.in/assets/logo.png",
+  "description": "Best taxi service in Ajmer offering local sightseeing, outstation cabs, and airport transfers. Professional drivers and luxury cars in Ajmer.",
   "telephone": "+91-6377214055",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Your Office Address Here",
     "addressLocality": "Ajmer",
     "addressRegion": "Rajasthan",
     "postalCode": "305001",
     "addressCountry": "IN"
   },
-  "areaServed": "Ajmer",
-  "priceRange": "₹₹",
-  "serviceType": [
-    "Taxi Service",
-    "Cab Service",
-    "Car Rental",
-    "Outstation Taxi",
-    "Airport Pickup"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "City Car Ajmer",
-  "url": "https://citycarajmer.in",
-  "telephone": "+91-6377214055",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ajmer",
-    "addressRegion": "Rajasthan",
-    "addressCountry": "IN"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "26.4499",
+    "longitude": "74.6399"
   },
-  "sameAs": [
-    "https://www.facebook.com/yourpage",
-    "https://www.instagram.com/yourpage"
-  ]
+  "areaServed": [
+    {"@type": "City", "name": "Ajmer"},
+    {"@type": "City", "name": "Pushkar"},
+    {"@type": "City", "name": "Kishangarh"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Taxi Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ajmer Local Sightseeing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ajmer to Pushkar Taxi" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kishangarh Airport Pickup" } }
+    ]
+  }
 }
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "City Car Ajmer",
-  "url": "https://citycarajmer.in",
-  "telephone": "+91-6377214055",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ajmer",
-    "addressRegion": "Rajasthan",
-    "addressCountry": "IN"
-  },
-  "sameAs": [
-    "https://www.facebook.com/yourpage",
-    "https://www.instagram.com/yourpage"
-  ]
-}
-</script>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TaxiService",
-  "name": "City Car Ajmer",
-  "url": "https://citycarajmer.in",
-  "logo": "https://citycarajmer.in/assets/logo.png",
-  "image": "https://citycarajmer.in/assets/logo.png",
-  "telephone": "+91-6377214055",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Ajmer",
-    "addressRegion": "Rajasthan",
-    "postalCode": "305001",
-    "addressCountry": "IN"
-  },
-  "areaServed": "Ajmer",
-  "priceRange": "₹₹",
-  "serviceType": [
-    "Taxi Service",
-    "Cab Service",
-    "Car Rental",
-    "Outstation Taxi",
-    "Airport Pickup"
-  ]
-}
-</script>
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], display: ['"Bricolage Grotesque"', 'sans-serif'] },
-            colors: { taxi: { yellow: '#F7C948', dark: '#0B0F1A', light: '#F8FAFC', border: '#E2E8F0' } }
-          }
-        }
-      }
-    </script>
-    <style>
+</script>    <style>
         :root { --taxi-yellow: #F7C948; }
         body { background-color: #FFFFFF; color: #0F172A; scroll-behavior: smooth; }
         .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0,0,0,0.05); }
