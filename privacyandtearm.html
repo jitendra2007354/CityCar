@@ -3,65 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Terms - Kids Quiz</title>
+    <title>Legal Center | City Car Ajmer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
-        .container { background: #fff; padding: 40px; border-radius: 8px; shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        .update-date { font-style: italic; color: #7f8c8d; }
-        .section { margin-bottom: 20px; }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .legal-gradient { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="update-date">Last Updated: May 9, 2026</p>
+<body class="antialiased">
 
-        <div class="section">
-            <p><strong>Kids Quiz</strong> (the "App"), developed by <strong>Jitendra Singh Chauhan</strong>, is committed to protecting your privacy. This policy explains how we handle information when you use our App.</p>
+    <!-- Header Section -->
+    <div class="legal-gradient text-white py-16 px-6 text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Legal Center</h1>
+        <p class="text-slate-300 max-w-2xl mx-auto text-lg">Transparency and safety for our Kids Quiz community and City Car Ajmer users.</p>
+        <div class="mt-6 inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold border border-white/20">
+            Last Updated: May 9, 2026
+        </div>
+    </div>
+
+    <main class="max-w-4xl mx-auto -mt-10 px-6 pb-24">
+        
+        <!-- Navigation Tabs -->
+        <div class="flex space-x-1 bg-slate-200/50 p-1 rounded-xl mb-8">
+            <button onclick="showTab('privacy')" id="btn-privacy" class="flex-1 py-3 text-sm font-bold rounded-lg transition-all bg-white shadow-sm text-slate-900">PRIVACY POLICY</button>
+            <button onclick="showTab('terms')" id="btn-terms" class="flex-1 py-3 text-sm font-bold rounded-lg transition-all text-slate-500 hover:text-slate-700">TERMS & CONDITIONS</button>
         </div>
 
-        <h2>1. Information Collection and Use</h2>
-        <p>The App works primarily offline. We do not collect personally identifiable information (PII) such as names or email addresses unless you voluntarily provide them. However, we use third-party services that may collect information used to identify you.</p>
-        
-        <h3>A. Google AdMob (Advertising)</h3>
-        <p>We use AdMob to serve ads. For users identified as children (under 13), we implement code to disable the Advertising ID (AAID) and serve non-personalized ads in compliance with COPPA and Google Play Families Policies.</p>
+        <!-- Privacy Content -->
+        <div id="tab-privacy" class="bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 p-8 md:p-12 transition-all">
+            <h2 class="text-3xl font-black mb-6 text-slate-900 border-b pb-4">Privacy Policy</h2>
+            
+            <section class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-600">1. Overview</h3>
+                    <p class="leading-relaxed">This Privacy Policy describes how <strong>City Car Ajmer</strong> ("we," "us," or "our") collects, uses, and shares information through the <strong>Kids Quiz</strong> mobile application. We prioritize the privacy of families and children.</p>
+                </div>
 
-        <h3>B. Firebase Analytics & Cloud Messaging (FCM)</h3>
-        <p>We use Firebase to understand app usage and send notifications. Data collected automatically includes device metadata (OS version, model), app install source, and basic interaction events. This data is used to improve the service and prevent abuse.</p>
+                <div class="p-6 bg-blue-50 rounded-2xl border border-blue-100">
+                    <h3 class="text-lg font-bold mb-2 text-blue-800 italic">2. Child Safety & COPPA Compliance</h3>
+                    <p class="text-blue-900 text-sm leading-relaxed">
+                        For users under the age of 13, we strictly comply with the Children's Online Privacy Protection Act (COPPA). We do not collect personalized data, we disable Advertising IDs (AAID), and we use a <strong>Neutral Age Screen</strong> to ensure a safe experience.
+                    </p>
+                </div>
 
-        <h2>2. Children's Privacy (COPPA Compliance)</h2>
-        <p>Since this App is designed for kids and mixed audiences, we strictly adhere to the following:</p>
-        <ul>
-            <li>We do not collect precise location data from children.</li>
-            <li>We use a "Neutral Age Screen" to ensure younger users receive child-safe ads.</li>
-            <li>We do not transmit sensitive identifiers (like AAID) from users identified as children.</li>
-        </ul>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">3. Third-Party Services</h3>
+                    <p class="mb-4">To provide a high-quality experience, we utilize the following Google Cloud services:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="bg-slate-100 p-2 rounded-lg mr-4 font-bold text-slate-900 text-xs">FCM</span>
+                            <p class="text-sm"><strong>Firebase Cloud Messaging:</strong> Used to send push notifications. We use randomized tokens that do not identify you personally.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-slate-100 p-2 rounded-lg mr-4 font-bold text-slate-900 text-xs">ANL</span>
+                            <p class="text-sm"><strong>Google Analytics:</strong> Collects anonymous metadata (device model, app crashes) to help us fix bugs and improve performance.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-slate-100 p-2 rounded-lg mr-4 font-bold text-slate-900 text-xs">ADS</span>
+                            <p class="text-sm"><strong>Google AdMob:</strong> Serves contextual, non-personalized ads to children and personalized ads to adult users (18+) who have provided consent.</p>
+                        </li>
+                    </ul>
+                </div>
 
-        <h2>3. Data Storage</h2>
-        <p>User progress, badges, and age settings are stored <strong>locally</strong> on your device. We do not upload this data to our servers.</p>
+                <div>
+                    <h3 class="text-xl font-bold mb-3">4. Local Data Storage</h3>
+                    <p class="leading-relaxed">The App is designed for offline functionality. Your scores, math progress, and badges are stored <strong>locally on your device</strong> and are never transmitted to our servers.</p>
+                </div>
+            </section>
+        </div>
 
-        <h2>4. Contact Us</h2>
-        <p>If you have questions, contact us at: <strong>[Your Email Here]</strong></p>
+        <!-- Terms Content -->
+        <div id="tab-terms" class="hidden bg-white rounded-3xl shadow-xl border border-slate-100 p-8 md:p-12">
+            <h2 class="text-3xl font-black mb-6 text-slate-900 border-b pb-4">Terms of Service</h2>
+            <div class="space-y-6 text-slate-600">
+                <p>By using the Kids Quiz app by <strong>City Car Ajmer</strong>, you agree to the following terms:</p>
+                <h4 class="font-bold text-slate-900 uppercase text-sm tracking-widest">Ownership</h4>
+                <p>All content, including quiz logic, code, and UI design, is the intellectual property of City Car Ajmer. Unauthorized duplication is prohibited.</p>
+                
+                <h4 class="font-bold text-slate-900 uppercase text-sm tracking-widest">Usage Limits</h4>
+                <p>You may use this app for personal, non-commercial educational purposes. You agree not to attempt to reverse engineer the application.</p>
+                
+                <h4 class="font-bold text-slate-900 uppercase text-sm tracking-widest">Liability</h4>
+                <p>City Car Ajmer is not responsible for any data loss or device issues arising from the use of this software. The app is provided "as is".</p>
+            </div>
+        </div>
 
-        <hr style="margin: 50px 0;">
+        <!-- Contact Footer -->
+        <div class="mt-12 text-center text-slate-500 text-sm">
+            <p>© 2026 City Car Ajmer. All Rights Reserved.</p>
+            <p class="mt-2 font-semibold">Contact: info@citycarajmer.in</p>
+        </div>
+    </main>
 
-        <h1>Terms and Conditions</h1>
-        <h2>1. Acceptance of Terms</h2>
-        <p>By downloading "Kids Quiz," you agree to these terms. If you do not agree, do not use the App.</p>
+    <script>
+        function showTab(tab) {
+            const privacy = document.getElementById('tab-privacy');
+            const terms = document.getElementById('tab-terms');
+            const btnP = document.getElementById('btn-privacy');
+            const btnT = document.getElementById('btn-terms');
 
-        <h2>2. License to Use</h2>
-        <p>We grant you a limited, non-exclusive, non-transferable, and revocable license to use the App for personal, non-commercial use only.</p>
-
-        <h2>3. Prohibited Conduct</h2>
-        <p>Users may not attempt to reverse engineer the App, bypass security features, or use the App for any illegal activity.</p>
-
-        <h2>4. Disclaimer of Warranties</h2>
-        <p>The App is provided "as is" without any warranties. We are not liable for any damages resulting from your use of the App.</p>
-
-        <h2>5. Changes to Terms</h2>
-        <p>We reserve the right to update these terms at any time. Your continued use of the App signifies acceptance of the new terms.</p>
-    </div>
+            if (tab === 'privacy') {
+                privacy.classList.remove('hidden');
+                terms.classList.add('hidden');
+                btnP.className = "flex-1 py-3 text-sm font-bold rounded-lg transition-all bg-white shadow-sm text-slate-900";
+                btnT.className = "flex-1 py-3 text-sm font-bold rounded-lg transition-all text-slate-500 hover:text-slate-700";
+            } else {
+                privacy.classList.add('hidden');
+                terms.classList.remove('hidden');
+                btnT.className = "flex-1 py-3 text-sm font-bold rounded-lg transition-all bg-white shadow-sm text-slate-900";
+                btnP.className = "flex-1 py-3 text-sm font-bold rounded-lg transition-all text-slate-500 hover:text-slate-700";
+            }
+        }
+    </script>
 </body>
 </html>
