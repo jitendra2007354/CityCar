@@ -23,7 +23,63 @@
     </style>
 </head>
 <body class="font-sans antialiased bg-slate-50">
-    
+    <!-- App Promotion Banner for City Car Ajmer -->
+<style>
+    #app-promotion-banner {
+        background: linear-gradient(90deg, #1a73e8, #0d47a1);
+        color: white;
+        padding: 12px 20px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        z-index: 9999;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .banner-text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .banner-btn {
+        background-color: #ffffff;
+        color: #1a73e8;
+        padding: 6px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        transition: background-color 0.3s;
+        display: inline-block;
+    }
+
+    .banner-btn:hover {
+        background-color: #f1f3f4;
+    }
+
+    /* Responsive Mobile View */
+    @media (max-width: 600px) {
+        #app-promotion-banner {
+            flex-direction: column;
+            gap: 8px;
+            padding: 15px;
+        }
+        .banner-text {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div id="app-promotion-banner">
+    <span class="banner-text">🚀 <strong>New:</strong> Practice Math with the <strong>Kids Quiz</strong> app by City Car Ajmer!</span>
+    <a href="https://play.google.com/store/apps/details?id=com.sparkey.kidsquiz" class="banner-btn" target="_blank">
+        Download on Play Store
+    </a>
+</div>
     <nav class="fixed top-0 w-full z-50 glass-nav px-6 py-4 bg-white">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-2">
